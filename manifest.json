@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Duck Debugger",
+    "version": "1.0",
+    "description": "quack quack quack quack",
+    "permissions": [
+        "activeTab"
+    ],
+    "action": {
+        "default_icon": {
+            "16": "128.png",
+            "48": "128.png",
+            "128": "128.png"
+        },
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "128.png",
+        "48": "128.png",
+        "128": "128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "popup.js"
+            ]
+        }
+    ]
+}

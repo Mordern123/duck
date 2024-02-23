@@ -1,0 +1,54 @@
+html {
+    width: 250px;
+    height: 150px;
+    background: #3c3f4e;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.input_content {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.submit_btn {
+    width: 30%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: #faf7cd;
+    background: #3c3f4e;
+}
+
+.output_content {
+    width: 80%;
+    text-align: center;
+    color: #fed700;
+}
+
+.duck_image {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    animation-name: duck;
+    animation-duration: 3s;
+}
+
+@keyframes duck {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 100%;
+    }
+}
